@@ -9,4 +9,4 @@ Run `npm run start`, application listening at `http://localhost:7770`
 
 ## Test
 
-Comming soon
+Coming soon
