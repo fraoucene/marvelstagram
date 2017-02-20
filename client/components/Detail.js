@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './Hero';
 import Comments from './Comments';
 import { Link } from 'react-router';
-import classNames from "classNames";
+import classnames from "classnames";
 
 const Detail = React.createClass({
 
@@ -40,13 +40,13 @@ const Detail = React.createClass({
 	renderNext(i) {
 		
 		const heros = this.props.heros.results;
-		let prevClass = classNames({
+		let prevClass = classnames({
 			disabled : i === 0,
 			button: true,
 			prevNext: true
 		});
 
-		let nextClass = classNames({
+		let nextClass = classnames({
 			disabled : i === heros.length - 1,
 			button: true
 		});
