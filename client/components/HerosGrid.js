@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import { Link } from 'react-router';
-import classNames from "classNames";
+import classnames from "classnames";
 import { LIMIT_VALUE } from '../api/constants';
 
 const HerosGrid = React.createClass({
@@ -13,23 +13,23 @@ const HerosGrid = React.createClass({
     	const firstOffset = 0;
     	const prevOffset = this.props.heros.offset - LIMIT_VALUE > -1 ? this.props.heros.offset - LIMIT_VALUE : 0;
 
-		let fistClass = classNames({
+		let fistClass = classnames({
 			disabled : this.props.heros.offset === 0,
 			button: true,
 		});
 
-		let prevClass = classNames({
+		let prevClass = classnames({
 			disabled : this.props.heros.offset === 0,
 			button: true,
 		});
 
-		let nextClass = classNames({
+		let nextClass = classnames({
 			disabled : this.props.heros.offset + this.props.heros.count === this.props.heros.total,
 			button: true,
 			nextLast: true
 		});
 
-		let lastClass = classNames({
+		let lastClass = classnames({
 			disabled : this.props.heros.offset + this.props.heros.count === this.props.heros.total,
 			button: true,
 		});
